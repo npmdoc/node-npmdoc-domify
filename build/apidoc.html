@@ -61,12 +61,131 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.domify">module domify</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.domify.domify">
+            function <span class="apidocSignatureSpan"></span>domify
+            <span class="apidocSignatureSpan">(html, doc)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.domify.toString">
+            function <span class="apidocSignatureSpan">domify.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.domify.toString">module domify.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.domify.toString.toString">
+            function <span class="apidocSignatureSpan">domify.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.domify" id="apidoc.module.domify">module domify</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.domify.domify" id="apidoc.element.domify.domify">
+        function <span class="apidocSignatureSpan"></span>domify
+        <span class="apidocSignatureSpan">(html, doc)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parse(html, doc) {
+  if (&#x27;string&#x27; != typeof html) throw new TypeError(&#x27;String expected&#x27;);
+
+  // default to the global `document` object
+  if (!doc) doc = document;
+
+  // tag name
+  var m = /&#x3c;([\w:]+)/.exec(html);
+  if (!m) return doc.createTextNode(html);
+
+  html = html.replace(/^\s+|\s+$/g, &#x27;&#x27;); // Remove leading/trailing whitespace
+
+  var tag = m[1];
+
+  // body support
+  if (tag == &#x27;body&#x27;) {
+    var el = doc.createElement(&#x27;html&#x27;);
+    el.innerHTML = html;
+    return el.removeChild(el.lastChild);
+  }
+
+  // wrap map
+  var wrap = map[tag] || map._default;
+  var depth = wrap[0];
+  var prefix = wrap[1];
+  var suffix = wrap[2];
+  var el = doc.createElement(&#x27;div&#x27;);
+  el.innerHTML = prefix + html + suffix;
+  while (depth--) el = el.lastChild;
+
+  // one element
+  if (el.firstChild == el.lastChild) {
+    return el.removeChild(el.firstChild);
+  }
+
+  // several elements
+  var fragment = doc.createDocumentFragment();
+  while (el.firstChild) {
+    fragment.appendChild(el.removeChild(el.firstChild));
+  }
+
+  return fragment;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.domify.toString" id="apidoc.element.domify.toString">
+        function <span class="apidocSignatureSpan">domify.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.domify.toString" id="apidoc.module.domify.toString">module domify.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.domify.toString.toString" id="apidoc.element.domify.toString.toString">
+        function <span class="apidocSignatureSpan">domify.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 

@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/component/domify#readme"
-
-    >domify (v1.4.0)</a>
+    <a href="https://github.com/component/domify#readme">domify (v1.4.0)</a>
 </h1>
 <h4>turn HTML into DOM elements</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.domify">module domify</a><ol>
 
@@ -108,22 +101,22 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function parse(html, doc) {
-  if (&#x27;string&#x27; != typeof html) throw new TypeError(&#x27;String expected&#x27;);
+  if ('string' != typeof html) throw new TypeError('String expected');
 
   // default to the global `document` object
   if (!doc) doc = document;
 
   // tag name
-  var m = /&#x3c;([\w:]+)/.exec(html);
+  var m = /&lt;([\w:]+)/.exec(html);
   if (!m) return doc.createTextNode(html);
 
-  html = html.replace(/^\s+|\s+$/g, &#x27;&#x27;); // Remove leading/trailing whitespace
+  html = html.replace(/^\s+|\s+$/g, ''); // Remove leading/trailing whitespace
 
   var tag = m[1];
 
   // body support
-  if (tag == &#x27;body&#x27;) {
-    var el = doc.createElement(&#x27;html&#x27;);
+  if (tag == 'body') {
+    var el = doc.createElement('html');
     el.innerHTML = html;
     return el.removeChild(el.lastChild);
   }
@@ -133,7 +126,7 @@
   var depth = wrap[0];
   var prefix = wrap[1];
   var suffix = wrap[2];
-  var el = doc.createElement(&#x27;div&#x27;);
+  var el = doc.createElement('div');
   el.innerHTML = prefix + html + suffix;
   while (depth--) el = el.lastChild;
 
@@ -195,3 +188,4 @@
     ]
 </div>
 </div>
+</body></html>
