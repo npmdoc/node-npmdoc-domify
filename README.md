@@ -1,9 +1,11 @@
 # api documentation for  [domify (v1.4.0)](https://github.com/component/domify#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-domify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-domify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-domify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-domify)
 #### turn HTML into DOM elements
 
-[![NPM](https://nodei.co/npm/domify.png?downloads=true)](https://www.npmjs.com/package/domify)
+[![NPM](https://nodei.co/npm/domify.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/domify)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-domify/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-domify_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-domify/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-domify/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-domify/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-domify/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-domify/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-domify/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +19,7 @@
 
 {
     "author": {
-        "name": "TJ Holowaychuk",
-        "email": "tj@vision-media.ca"
+        "name": "TJ Holowaychuk"
     },
     "bugs": {
         "url": "https://github.com/component/domify/issues"
@@ -52,117 +53,89 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "tjholowaychuk",
-            "email": "tj@vision-media.ca"
+            "name": "tjholowaychuk"
         },
         {
-            "name": "anthonyshort",
-            "email": "antshort@gmail.com"
+            "name": "anthonyshort"
         },
         {
-            "name": "thehydroimpulse",
-            "email": "dnfagnan@gmail.com"
+            "name": "thehydroimpulse"
         },
         {
-            "name": "timaschew",
-            "email": "timaschew@gmail.com"
+            "name": "timaschew"
         },
         {
-            "name": "hughsk",
-            "email": "hughskennedy@gmail.com"
+            "name": "hughsk"
         },
         {
-            "name": "jongleberry",
-            "email": "jonathanrichardong@gmail.com"
+            "name": "jongleberry"
         },
         {
-            "name": "dominicbarnes",
-            "email": "dominic@dbarnes.info"
+            "name": "dominicbarnes"
         },
         {
-            "name": "tootallnate",
-            "email": "nathan@tootallnate.net"
+            "name": "tootallnate"
         },
         {
-            "name": "rauchg",
-            "email": "rauchg@gmail.com"
+            "name": "rauchg"
         },
         {
-            "name": "retrofox",
-            "email": "rdsuarez@gmail.com"
+            "name": "retrofox"
         },
         {
-            "name": "coreh",
-            "email": "thecoreh@gmail.com"
+            "name": "coreh"
         },
         {
-            "name": "forbeslindesay",
-            "email": "forbes@lindesay.co.uk"
+            "name": "forbeslindesay"
         },
         {
-            "name": "kelonye",
-            "email": "kelonyemitchel@gmail.com"
+            "name": "kelonye"
         },
         {
-            "name": "mattmueller",
-            "email": "mattmuelle@gmail.com"
+            "name": "mattmueller"
         },
         {
-            "name": "yields",
-            "email": "yields@icloud.com"
+            "name": "yields"
         },
         {
-            "name": "ianstormtaylor",
-            "email": "ian@ianstormtaylor.com"
+            "name": "ianstormtaylor"
         },
         {
-            "name": "cristiandouce",
-            "email": "cristian@gravityonmars.com"
+            "name": "cristiandouce"
         },
         {
-            "name": "swatinem",
-            "email": "arpad.borsos@googlemail.com"
+            "name": "swatinem"
         },
         {
-            "name": "stagas",
-            "email": "gstagas@gmail.com"
+            "name": "stagas"
         },
         {
-            "name": "amasad",
-            "email": "amjad.masad@gmail.com"
+            "name": "amasad"
         },
         {
-            "name": "juliangruber",
-            "email": "julian@juliangruber.com"
+            "name": "juliangruber"
         },
         {
-            "name": "calvinfo",
-            "email": "calvin@calv.info"
+            "name": "calvinfo"
         },
         {
-            "name": "timoxley",
-            "email": "secoif@gmail.com"
+            "name": "timoxley"
         },
         {
-            "name": "clintwood",
-            "email": "clint@anotherway.co.za"
+            "name": "clintwood"
         },
         {
-            "name": "dfcreative",
-            "email": "df.creative@gmail.com"
+            "name": "dfcreative"
         },
         {
-            "name": "defunctzombie",
-            "email": "shtylman@gmail.com"
+            "name": "defunctzombie"
         },
         {
-            "name": "stephenmathieson",
-            "email": "me@stephenmathieson.com"
+            "name": "stephenmathieson"
         }
     ],
     "name": "domify",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/component/domify.git"
@@ -171,16 +144,6 @@
     "version": "1.4.0"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module domify](#apidoc.module.domify)
-
-
-
-# <a name="apidoc.module.domify"></a>[module domify](#apidoc.module.domify)
 
 
 
