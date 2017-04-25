@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "domify",
-    "description": "api documentation for [domify (v1.4.0)](https://github.com/component/domify#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-domify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-domify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-domify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-domify)",
+    "description": "#### basic api documentation for  [domify (v1.4.0)](https://github.com/component/domify#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-domify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-domify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-domify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-domify)",
     "devDependencies": {
         "domify": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",

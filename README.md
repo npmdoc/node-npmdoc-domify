@@ -1,4 +1,7 @@
-# api documentation for  [domify (v1.4.0)](https://github.com/component/domify#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-domify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-domify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-domify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-domify)
+# npmdoc-domify
+
+#### basic api documentation for  [domify (v1.4.0)](https://github.com/component/domify#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-domify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-domify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-domify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-domify)
+
 #### turn HTML into DOM elements
 
 [![NPM](https://nodei.co/npm/domify.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/domify)
@@ -141,7 +144,8 @@
         "url": "git+https://github.com/component/domify.git"
     },
     "scripts": {},
-    "version": "1.4.0"
+    "version": "1.4.0",
+    "bin": {}
 }
 ```
 
